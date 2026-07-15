@@ -1,12 +1,13 @@
 package com.practice;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class PersonTest {
+import static org.junit.Assert.assertEquals;
+
+public class PersonTest {
 
     @Test
-    void ageShouldBeStoredCorrectly() {
+   public void ageShouldBeStoredCorrectly() {
 
         Person person = new Person();
 
@@ -16,7 +17,7 @@ class PersonTest {
     }
 
     @Test
-    void ageShouldNotAllowNegativeNumbers() {
+    public void ageShouldNotAllowNegativeNumbers() {
 
         Person person = new Person();
 
@@ -27,7 +28,7 @@ class PersonTest {
     }
 
     @Test
-    void ageShouldNotAllowUnrealisticValues() {
+    public void ageShouldNotAllowUnrealisticValues() {
 
         Person person = new Person();
 
